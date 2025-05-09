@@ -1,0 +1,111 @@
+.header{
+    padding: 0;
+    width: 100%;
+    height: 80px;
+    background: rgb(235,235, 235);
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-left: 80px;
+
+            .dropdown {
+            position: relative;
+            list-style: none;
+
+                .dropbtn {
+                color: rgb(0, 0, 0);
+                cursor: pointer;
+                padding: 10px;
+                }
+
+                .dropdown-content {
+                top: 36px;
+                display: none;
+                position: absolute;
+                text-align: left;
+                min-width: 100px;
+
+                z-index: 1;
+                list-style: none;
+
+                li {
+                    a {
+                    color: rgb(0, 0, 0);
+                    padding: 10px;
+                    display: block;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: #555;
+                    }
+                    }
+                }
+                }
+
+                &:hover .dropdown-content {
+                display: block;
+                }
+            }
+        }
+
+        .right{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-right: 140px;
+            margin-top: 20px;
+            a{
+                text-decoration: none;
+                color: rgb(15,15,15);
+
+                &:hover{
+                    color: rgb(250, 157, 157);
+                }
+            }
+        }
+
+        button {
+            background: transparent;
+            border: none;
+            margin-left: 30px;
+            color: inherit; // opcional: herda a cor do texto do elemento pai
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.8; // feedback visual no hover
+            }
+        }
+        .Lançamentos{
+            text-decoration: none;
+        }
+
+        .Outlet{
+            color: #B11B25;
+            text-decoration: none;
+        }
+    }
+    .locationBar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #B11B25;
+        color: #FFFFFF;
+        gap: 5px;
+
+        a{
+            color: #FFFFFF;
+        }
+
+    }
+    
+}
+
